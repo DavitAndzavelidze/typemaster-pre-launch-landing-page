@@ -5,6 +5,7 @@
 }
 :root {
   --orange: #f16718;
+  --orange-lite: #ff9b62;
   --grey: #e8eff2;
   --main-color: #162542;
   --secondary-color: #7b8bad;
@@ -33,6 +34,11 @@ body {
   color: var(--main-color);
   background: var(--btn-bg);
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.navbar__btn a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
 }
 /********** Main **********/
 .main__image_bg,
@@ -73,6 +79,10 @@ body {
   padding: 11px 14px;
   background: var(--orange);
   border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.main__box-btn:hover {
+  background: var(--orange-lite);
 }
 .main__box-info {
   text-decoration: none;
